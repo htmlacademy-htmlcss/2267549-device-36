@@ -11,21 +11,24 @@
       </a>
       <nav class="navigation">
         <div class="navigation-user">
-            <form class="navigation-user-search" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="navigation-user-search" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden">
               <input type="search" placeholder="Поиск по сайту">
-              <button class="button-search" type="submit">Найти</button>
-            </form>
-            <a class="navigation-user-button" href="#">
-              <span class="navigation-user-name">Имя пользователя</span> Войти
-            </a>
-            <ul class="navigation-user-list">
-              <li class="navigation-user-item">
-                <button class="navigation-user-button" type="button">Сравнить</button>
-              </li>
-              <li class="navigation-user-item">
-                <button class="navigation-user-button" type="button">Корзина</button>
-              </li>
-            </ul>
+              Поиск по сайту
+            </label>
+            <button class="button-search" type="submit">Найти</button>
+          </form>
+          <a class="navigation-user-button" href="#">
+            <span class="navigation-user-name">Имя пользователя</span> Войти
+          </a>
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <button class="navigation-user-button" type="button">Сравнить</button>
+            </li>
+            <li class="navigation-user-item">
+              <button class="navigation-user-button" type="button">Корзина</button>
+            </li>
+          </ul>
         </div>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -67,27 +70,63 @@
       <h1 class="visually-hidden">Интернет магазин Divace</h1>
       <section class="gallery">
         <h2 class="visually-hidden">Слайдер</h2>
-        <img class="slider-image" src="" alt="слайдер">
+        <div class="gallery-slider-1">
+          <img class="slider-image" src="" alt="слайдер">
+          <p class="slider-tittle">Порхает как бабочка, жалит как пчела!</p>
+          <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="button button-more" href="#">Подробнее</a>
+          <table class="slider-characteristics">
+            <caption class="visually-hidden">Характеристики товара</caption>
+            <tr class="slider-characteristics-title">
+              <th>Длительность полета</th>
+              <th>Радиус поражения</th>
+            </tr>
+            <tr class="slider-characteristics-value">
+              <td>800 м</td>
+              <td>850 м</td>
+            </tr>
+          </table>
+        </div>
+        <div class="gallery-slider-2">
+          <img class="slider-image" src="" alt="слайдер">
+          <p class="slider-tittle">Худеем правильно!</p>
+          <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="button button-more" href="#">Подробнее</a>
+          <table class="slider-characteristics">
+            <caption class="visually-hidden">Характеристики товара</caption>
+            <tr class="slider-characteristics-title">
+              <th>Без подзарядки</th>
+            </tr>
+            <tr class="slider-characteristics-value">
+              <td>48 часов</td>
+            </tr>
+          </table>
+        </div>
+        <div class="gallery-slider-3">
+          <img class="slider-image" src="" alt="слайдер">
+          <p class="slider-tittle">Делай селфи, как Бен Стиллер! </p>
+          <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг. </p>
+          <a class="button button-more" href="#">Подробнее</a>
+          <table class="slider-characteristics">
+            <caption class="visually-hidden">Характеристики товара</caption>
+            <tr class="slider-characteristics-title">
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
+            </tr>
+            <tr class="slider-characteristics-value">
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+          </table>
+        </div>
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
         </button>
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <p class="slider-tittle">Порхает как бабочка, жалит как пчела!</p>
-        <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="button button-more" href="#">Подробнее</a>
-        <table class="slider-characteristics">
-          <caption class="visually-hidden">Характеристики товара</caption>
-          <tr class="slider-characteristics-title">
-            <th>Длительность полета</th>
-            <th>Радиус поражения</th>
-          </tr>
-          <tr class="slider-characteristics-value">
-            <td>800 м</td>
-            <td>850 м</td>
-          </tr>
-        </table>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -152,9 +191,17 @@
           <button class="button info-customer-button" type="button">Гарантия</button>
           <button class="button info-customer-button" type="button">Кредит</button>
         </div>
-        <div class="info-customer-description">
+        <div class="info-customer-description description-delivery">
           <h2 class="info-customer-tittle">Доставка</h2>
           <p class="info-customer-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="info-customer-description description-guarantee">
+          <h2 class="info-customer-tittle">Гарантия</h2>
+          <p class="info-customer-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </div>
+        <div class="info-customer-description description-credit">
+          <h2 class="info-customer-tittle">Кредит</h2>
+          <p class="info-customer-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
         </div>
       </section>
       <button class="button-delivery" type="button">Доставим редкий товар под заказ</button>
@@ -188,7 +235,10 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <label class="visually-hidden">
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            Ваш e-mail
+          </label>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
         <span class="newsletter-text">Это бесплатно</span>
