@@ -12,10 +12,8 @@
       <nav class="navigation">
         <div class="navigation-user">
           <form class="navigation-user-search" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden">
-              <input type="search" placeholder="Поиск по сайту">
-              Поиск по сайту
-            </label>
+            <label class="visually-hidden" for="input-search-id">Поиск по сайту</label>
+            <input id="input-search-id" type="search" placeholder="Поиск по сайту">
             <button class="button-search" type="submit">Найти</button>
           </form>
           <a class="navigation-user-button" href="#">
@@ -235,10 +233,8 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden">
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-            Ваш e-mail
-          </label>
+          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
         <span class="newsletter-text">Это бесплатно</span>
