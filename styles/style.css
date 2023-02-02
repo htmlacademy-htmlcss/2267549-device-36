@@ -22,8 +22,62 @@
     font-display: swap;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 body{
     font-family: "Rubik", sans-serif;
+    font-style: normal;
     font-size: 18px;
     line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+}
+
+/*слайдер*/
+.slider-number{
+    height: 150px;
+    width: 100%;
+    background-color: #FFE17F;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 30px;
+}
+
+.slider-tittle{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.button{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.slider-characteristics-title{
+    font-size: 16px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.slider-characteristics-value{
+    font-size: 36px;
+    line-height: 30px;
+    color: #000000;
 }
