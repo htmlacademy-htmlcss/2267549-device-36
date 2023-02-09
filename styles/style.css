@@ -286,13 +286,16 @@ body{
   list-style-type: none;
 }
 
+.product-card-link{
+  text-decoration: none;
+}
+
 .product-card-title{
   color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  text-decoration: none;
 }
 
 .product-card-price{
@@ -301,7 +304,6 @@ body{
   line-height: 21px;
   text-align: right;
   color: #444444;
-  text-decoration: none;
 }
 
 .button-show-more{
