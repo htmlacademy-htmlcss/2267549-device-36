@@ -242,6 +242,7 @@ body{
 }
 
 .breadcrumbs-link{
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -255,6 +256,10 @@ body{
 .product{
   font-family: 'Rubik', 'Arial', sans-serif;
   background-color: #FFFFFF;
+}
+
+.catalog-filter-item{
+  list-style-type: none;
 }
 
 .catalog-filter-title{
@@ -277,11 +282,17 @@ body{
   color: #000000;
 }
 
+.product-card{
+  list-style-type: none;
+}
+
 .product-card-title{
+  color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 .product-card-price{
@@ -290,6 +301,7 @@ body{
   line-height: 21px;
   text-align: right;
   color: #444444;
+  text-decoration: none;
 }
 
 .button-show-more{
@@ -307,6 +319,10 @@ body{
   background-color: #EBEBEB;
 }
 
+.pagination-item{
+  list-style-type: none;
+}
+
 .pagination-link{
   font-family: 'Rubik', 'Arial', sans-serif;
   font-weight: 400;
@@ -315,6 +331,7 @@ body{
   text-align: center;
   color: #444444;
   opacity: 0.3;
+  text-decoration: none;
 }
 
 .pagination-link-prev, .pagination-link-next{
