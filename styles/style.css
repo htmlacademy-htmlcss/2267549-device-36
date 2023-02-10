@@ -1,29 +1,29 @@
 @font-face{
-    font-family: "Raleway";
-    font-weight: 800;
-    font-style: normal;
-    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
-    font-display: swap;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face{
-    font-family: "Rubik";
-    font-weight: 400;
-    font-style: normal;
-    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face{
-    font-family: "Rubik";
-    font-weight: 700;
-    font-style: normal;
-    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
-    font-display: swap;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
 }
 
 .visually-hidden{
-  display: none;
+
 }
 
 body{
@@ -32,8 +32,7 @@ body{
   line-height: 30px;
   font-weight: 400;
   color: #444444;
-  text-align: left;
-}
+ }
 
 .page-header{
   background-color: #FFE17F;
@@ -228,7 +227,7 @@ body{
 
 .main-inner{
   color: #000000;
-  font-family: 'Raleway, 'Arial', sans-serif';
+  font-family: 'Raleway', 'Arial', sans-serif;
 }
 
 .breadcrumbs-item{
