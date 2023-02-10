@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -85,52 +86,52 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <!--Стоимость-->
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
+              <legend class="catalog-filter-subtitle">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="controi-input" type="checkbox" name="black" checked>
+                    <input class="control-input" type="checkbox" name="black" checked>
                     Черный
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="controi-input" type="checkbox" name="white" checked>
+                    <input class="control-input" type="checkbox" name="white" checked>
                     Белый
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="controi-input" type="checkbox" name="blue">
+                    <input class="control-input" type="checkbox" name="blue">
                     Синий
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="controi-input" type="checkbox" name="red">
+                    <input class="control-input" type="checkbox" name="red">
                     Красный
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="controi-input" type="checkbox" name="pink">
+                    <input class="control-input" type="checkbox" name="pink">
                     Розовый
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluetooth</legend>
+              <legend class="catalog-filter-subtitle">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="controi-input" type="radio" name="choice" value="true">
+                    <input class="control-input" type="radio" name="choice" value="true">
                     Есть
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="controi-input" type="radio" name="choice" value="false">
+                    <input class="control-input" type="radio" name="choice" value="false">
                     Нет
                   </label>
                 </li>
@@ -186,10 +187,10 @@
           <button class="button-show-more" type="button">Загрузить ещё</button>
           <ul class="pagination">
             <li class="pagination-item pagination-prev pagination-disabled">
-              <a class="pagination-link">Назад</a>
+              <a class="pagination-link pagination-link-prev">Назад</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">1</a>
+              <a class="pagination-link pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -204,7 +205,7 @@
               <a class="pagination-link" href="#">15</a>
             </li>
             <li class="pagination-item pagination-next">
-              <a class="pagination-link">Вперёд</a>
+              <a class="pagination-link pagination-link-next pagination-active">Вперёд</a>
             </li>
           </ul>
         </div>
@@ -215,7 +216,7 @@
         <a class="logo-link" href="index.html">
           <img class="logo" src="images/icons/logo.svg" width="145" height="36" alt="Логотип Интренет-магазина Девайс.">
         </a>
-        <p class="contacts-address-text">>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </div>
       <div>
         <nav class="navigation-footer">
