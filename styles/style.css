@@ -268,10 +268,7 @@ body{
   padding-right: 20px;
   min-height: 40px;
   position: relative;
-
-
 }
-
 .button-yellow::before{
   content: "";
   background-color: #FFE17F;
@@ -672,13 +669,25 @@ body{
 .main-inner{
   color: #000000;
   font-family: 'Raleway', 'Arial', sans-serif;
+  padding-top: 35px;
+}
+
+.breadcrumbs{
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 34px;
+  margin-left: 60px;
 }
 
 .breadcrumbs-item{
   list-style-type: none;
+  margin-right: 36px;
 }
 
 .inner-header-title{
+  margin: 0;
+  margin-bottom: 16px;
+  margin-left: 60px;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -703,15 +712,59 @@ body{
 
 .catalog-right-column{
   width: 840px;
+  background-color: #FFFFFF;
 }
 
 .catalog-filter{
   width: 320px;
 }
 
+.catalog-products-filter{
+  padding-left: 60px;
+  padding-top: 25px;
+}
+
+.sorting-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #F0F0F0;
+  align-items: center;
+}
+
+.sorting-container-button .button{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.sorting-container-button{
+  display: flex;
+
+ }
+
 .product{
   font-family: 'Rubik', 'Arial', sans-serif;
   background-color: #FFFFFF;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.catalog-filter{
+  margin-top: 60px;
+}
+
+.catalog-filter-group{
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 35px;
 }
 
 .catalog-filter-item{
@@ -719,6 +772,7 @@ body{
 }
 
 .catalog-filter-title{
+  margin: 0;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -731,11 +785,19 @@ body{
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin-bottom: 20px;
  }
 
 .popular{
   font-family: 'Rubik', 'Arial', sans-serif;
   color: #000000;
+}
+
+.product-list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 44px;
 }
 
 .product-card{
@@ -770,15 +832,34 @@ body{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 3px solid #E5E5E5;
-  height: 55px;
+  background-color: #FFFFFF;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 100%;
+  margin-bottom: 44px;
 }
 
-.pagination{
+.pagination-container{
+  display: flex;
+  justify-content: space-between;
   background-color: #EBEBEB;
+  align-items: center;
+  margin-bottom: 78px;
+}
+
+.pagination-list{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
 }
 
 .pagination-item{
   list-style-type: none;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 .pagination-link{
@@ -799,6 +880,7 @@ body{
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding: 25px;
 }
 
 .pagination-current{
