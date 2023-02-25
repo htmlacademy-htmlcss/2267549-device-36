@@ -115,18 +115,20 @@ body{
   border-radius: 50px 0px 0px 50px;
   width: 359px;
   background-color: transparent;
-  padding: 10px;
+  padding: 12px;
+  padding-left: 44px;
+  background-image: url(../images/icons/search.svg);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center left 16px;
+
 }
 
 .button-search{
   border: 2px solid #000000;
   border-left: none;
   border-radius: 0px 50px 50px 0px;
-  width: 160px;
-}
-
-.navigation-user-enter{
-  width: 230px;
+  width: 158px;
 }
 
 .navigation-user-button{
@@ -138,6 +140,8 @@ body{
   flex-wrap: wrap;
   width: 240px;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-header{
@@ -169,6 +173,39 @@ body{
   width: 293px;
 }
 
+.navigation-user-item{
+  position: relative;
+}
+
+.navigation-user-item-compare{
+  padding-left: 22px;
+}
+
+.navigation-user-item-cart{
+  padding-left: 25px;
+}
+
+.navigation-user-enter{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 203px;
+  padding-left: 27px;
+}
+
+.navigation-user-name{
+  margin-right: 28px;
+}
+
+.navigation-icon{
+  fill: #000000;
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  margin: auto 0;
+}
+
 .navigation-link-catalog{
   padding-top: 15px;
   padding-bottom: 15px;
@@ -186,11 +223,6 @@ body{
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
-}
-
-.navigation-user-list{
-  margin: 0;
-  padding: 0;
 }
 
 /*слайдер*/
