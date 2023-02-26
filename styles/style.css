@@ -227,6 +227,7 @@ body{
 
 /*слайдер*/
 .gallery{
+  position: relative;
   margin-bottom: 70px;
 }
 
@@ -340,46 +341,110 @@ body{
 .slider-pagination-item{
   list-style-type: none;
 }
+
+.slider-button{
+  position: absolute;
+  padding: 0;
+  width: 20px;
+  height: 60px;
+  border: none;
+  display: block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.slider-button:hover{
+  opacity: 0.6;
+}
+
+.slider-button:active{
+  opacity: 0.3;
+}
+
+
+.slider-prev{
+  background-image: url("../images/icons/arrow-left.svg");
+  top: 211px;
+  left: 30px;
+}
+
+.slider-next{
+  background-image: url("../images/icons/arrow-right.svg");
+  top: 211px;
+  left: 540px;
+}
 /*категории*/
 .category-link{
+  display: block;
   font-family: 'Raleway', 'Arial', sans-serif;
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #000000;
   text-decoration: none;
+  padding-bottom: 12px;
 }
 
-.category-item::before{
+.category-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.category-tittle{
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.category-item{
+  width: 160px;
+ }
+
+.category-link::before{
   background-color: #FFE17F;
   width: 160px;
   height: 160px;
-  display: inline-block;
-  text-align: center;
+  display: block;
+  content:"";
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 32px;
 }
 
-.category-item-virtual::before{
-  content: url("../images/icons/virtual.svg");
+.category-link:hover::before{
+  background-color: #FFC700;
 }
 
-.category-item-monopod::before{
-  content: url("../images/icons/monopod.svg");
+.category-link:active{
+  opacity: 0.3;
 }
 
-.category-item-camera::before{
-  content: url("../images/icons/camera.svg");
+.category-link-virtual::before{
+  background-image: url("../images/icons/virtual.svg");
 }
 
-.category-item-fitness::before{
-  content: url("../images/icons/fitness.svg");
+.category-link-monopod::before{
+  background-image: url("../images/icons/monopod.svg");
+  background-position: bottom;
 }
 
-.category-item-clock::before{
-  content: url("../images/icons/clock.svg");
+.category-link-camera::before{
+  background-image: url("../images/icons/camera.svg");
 }
 
-.category-item-quadrocopter::before{
-  content: url("../images/icons/quadrocopter.svg");
+.category-link-fitness::before{
+  background-image: url("../images/icons/fitness.svg");
+}
+
+.category-link-clock::before{
+  background-image: url("../images/icons/clock.svg");
+}
+
+.category-link-quadrocopter::before{
+  background-image: url("../images/icons/quadrocopter.svg");
 }
 
 .title{
@@ -411,21 +476,6 @@ body{
   font-size: 24px;
 }
 
-.category-list{
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 70px;
-}
-
-.category-tittle{
-  font-size: 18px;
-}
-
-.category-item{
-  width: 160px;
- }
 /*информация для покупателей*/
 .info-customer{
   background: linear-gradient(to bottom, #FFFFFF 0 102px, #F0F0F0 102px 391px);
@@ -627,6 +677,7 @@ body{
 
 .logo-footer{
   display: block;
+  fill: #FFC700;
 }
 
 .contacts-address-footer{
@@ -665,6 +716,7 @@ body{
 
 .htmlacademy-link-logo{
   display: block;
+  fill: #FFC700;
 }
 
 .footer-social-list{
@@ -688,24 +740,33 @@ body{
   color: #FFFFFF;
 }
 
+.footer-social-link{
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
 .footer-social-item{
   width: 40px;
   height: 40px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  background-repeat: no-repeat;
+  fill: #444444;
 }
 
-.footer-social-telegram{
-  background-image: url("../images/icons/telegram.svg");
-}
-
-.footer-social-youtube{
-  background-image: url("../images/icons/youtube.svg");
-}
-
-.footer-social-twitter{
-  background-image: url("../images/icons/twitter.svg");
+.footer-social-item:hover{
+  background-color: #FFC700;
 }
 
 /*страница каталог*/
@@ -858,6 +919,7 @@ body{
 
 .product-card-text{
   display: flex;
+
 }
 
 .product-card-title{
@@ -868,6 +930,7 @@ body{
   letter-spacing: -0.02em;
   margin: 0;
   width: 226px;
+  flex-wrap: wrap;
 }
 
 .product-card-price{
