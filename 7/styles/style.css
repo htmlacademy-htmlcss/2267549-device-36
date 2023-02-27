@@ -117,7 +117,7 @@ body{
   background-color: transparent;
   padding: 12px;
   padding-left: 44px;
-  background-image: url(../images/icons/search.svg);
+  background-image: url("../images/icons/search.svg");
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center left 16px;
@@ -361,7 +361,6 @@ body{
   opacity: 0.3;
 }
 
-
 .slider-prev{
   background-image: url("../images/icons/arrow-left.svg");
   top: 211px;
@@ -408,7 +407,7 @@ body{
   width: 160px;
   height: 160px;
   display: block;
-  content:"";
+  content: "";
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 32px;
