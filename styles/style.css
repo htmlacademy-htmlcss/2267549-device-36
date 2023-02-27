@@ -523,6 +523,9 @@ body{
 }
 
 .button-delivery{
+  display: grid;
+  grid-template-columns: 125px 910px 125px;
+  padding: 0;
   font-family: 'Raleway', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -538,6 +541,30 @@ body{
   margin-bottom: 70px;
 }
 
+.button-delivery::before{
+  display: block;
+  content: "";
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  background-image: url('../images/icons/delivery-car.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-delivery::after{
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+  background-image: url('../images/icons/i.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-self: center;
+  align-self: center;
+}
 .index-columns{
   display: flex;
   justify-content: space-between;
