@@ -282,7 +282,7 @@ body{
   text-decoration: none;
 }
 
-.navigation-link-active{
+.navigation-link-activeб{
   position: relative;
 }
 
@@ -298,20 +298,24 @@ body{
   margin-right: auto;
 }
 
-.navigation-link:hover{
+.navigation-link:hover,
+.navigation-submenu-link:hover{
   opacity: 0.6;
 }
 
-.navigation-link:active{
+.navigation-link:active,
+.navigation-submenu-link:active{
   opacity: 0.3;
 }
 
-.navigation-link:focus{
+.navigation-link:focus,
+.navigation-submenu-link:focus{
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
-.navigation-link:active:focus{
+.navigation-link:active:focus,
+.navigation-submenu-link:active:focus{
   outline: none;
 }
 
@@ -384,12 +388,13 @@ body{
   opacity: 1;
 }
 
-.navigation-link-catalog:hover::after{
+.navigation-link-catalog:hover::after,
+.navigation-item:focus-within .navigation-link-catalog::after{
   background-image: url("../images/icons/minus.svg");
   opacity: 1;
 }
 
-.navigation-item:hover>.navigation-submenu-list{
+.navigation-item:focus-within .navigation-submenu-list{
   display: grid;
 }
 
