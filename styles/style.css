@@ -282,6 +282,18 @@ body{
   text-decoration: none;
 }
 
+.navigation-link-active{
+  position: relative;
+}
+
+.navigation-link-active:after{
+  content:"";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+}
+
 .navigation-item:first-child{
   margin-right: auto;
 }
@@ -388,7 +400,7 @@ body{
   position: absolute;
   width: 1160px;
   left: -60px;
-  top: 33px;
+  top: 41px;
   padding-top: 33px;
   padding-bottom: 57px;
   padding-left: 60px;
