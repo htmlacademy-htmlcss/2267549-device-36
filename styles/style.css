@@ -93,10 +93,13 @@ body{
 
 .navigation-user-enter{
   display: flex;
-  box-sizing: border-box;
+  justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
   width: 230px;
+}
+
+.navigation-user-login{
   padding-left: 27px;
   background-image: url("../images/icons/personal.svg");
   background-size: 13px 12px;
@@ -110,7 +113,12 @@ body{
 }
 
 .navigation-user-name{
-  margin-right: 28px;
+  /*margin-right: 28px;*/
+  padding-left: 27px;
+  background-image: url("../images/icons/personal.svg");
+  background-size: 13px 12px;
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .navigation-user-button-compare{
@@ -380,15 +388,12 @@ body{
   margin-left: 15px;
 }
 
-.navigation-link-catalog:hover{
-  opacity: 1;
-}
-
-.navigation-link-catalog:active{
-  opacity: 1;
-}
-
+.navigation-link-catalog:hover,
 .navigation-link-catalog:hover::after,
+.navigation-link-catalog:active::after{
+  opacity: 1;
+}
+
 .navigation-item:focus-within .navigation-link-catalog::after{
   background-image: url("../images/icons/minus.svg");
   opacity: 1;
