@@ -485,6 +485,7 @@ body{
   border: none;
   background-color: transparent;
   text-align: center;
+  cursor: pointer;
 }
 
 .slider-characteristics-title{
@@ -1665,6 +1666,19 @@ height: 36px;
   background-repeat: no-repeat;
   background-position: right 11px center;
   appearance: none;
+}
+
+.select-control:hover{
+  opacity: 0.6;
+}
+
+.select-control:focus{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.select-control:active:focus{
+  outline: none;
 }
 
 .popular{
