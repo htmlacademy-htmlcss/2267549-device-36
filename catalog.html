@@ -8,8 +8,8 @@
   <body>
     <header class="page-header">
       <div class="container-header">
-        <a class="logo-link" href="index.html">
-          <img class="logo-header" src="images/icons/logo.svg" width="145" height="36" alt="Логотип Интренет-магазина Девайс.">
+        <a class="logo-link logo-link-header" href="index.html">
+          <img src="images/icons/logo.svg" width="145" height="36" alt="Логотип Интренет-магазина Девайс.">
         </a>
         <nav class="navigation">
           <div class="navigation-user">
@@ -18,18 +18,23 @@
               <input class="input-search" id="input-search-id" type="search" placeholder="Поиск по сайту">
               <button class="button-search" type="submit">Найти</button>
             </form>
+            <!---
             <a class="navigation-user-enter navigation-user-button" href="#">
               <span class="navigation-user-name">Коля Петухов</span>
               <span class="navigation-user-logout">Выйти</span>
-            </a>
+            </a>-->
+            <div class="navigation-user-enter">
+              <span class="navigation-user-name">Коля Петухов</span>
+              <a class="navigation-user-button navigation-user-logout" href="">Выйти</a>
+            </div>
             <ul class="navigation-user-list">
               <li class="navigation-user-item">
                 <a class="navigation-user-button navigation-user-button-compare" href="#">Сравнить</a>
               </li>
               <li class="navigation-user-item">
                 <a class="navigation-user-button navigation-user-button-cart" href="#">
-                    Корзина
-                    <span class="cart-count">2</span>
+                  Корзина
+                  <span class="cart-count">2</span>
                 </a>
               </li>
             </ul>
@@ -169,10 +174,10 @@
                 <option value="price">Цена</option>
               </select>
               <div class="sorting-container-button">
-                <a class="button button-top" href="#">
+                <a class="sorting-button button-top" href="#">
                   <span class="visually-hidden">По убыванию.</span>
                 </a>
-                <a class="button button-bottom" href="#">
+                <a class="sorting-button button-bottom" href="#">
                   <span class="visually-hidden">По возрастанию.</span>
                 </a>
               </div>
@@ -231,7 +236,7 @@
               </ul>
               <button class="button-show-more" type="button">Загрузить ещё</button>
               <div class="pagination-container">
-                <a class="pagination-link-prev pagination-disabled">Назад</a>
+                <a class="pagination-button pagination-disabled">Назад</a>
                 <ul class="pagination-list">
                   <li class="pagination-item">
                     <a class="pagination-link pagination-current" href="#">1</a>
@@ -243,13 +248,13 @@
                     <a class="pagination-link" href="#">3</a>
                   </li>
                   <li class="pagination-item">
-                    <span>...</span>
+                    <a class="pagination-link" href="#">...</a>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">15</a>
                   </li>
                 </ul>
-                <a class="pagination-link-next pagination-active">Вперёд</a>
+                <a class="pagination-button pagination-link-next pagination-active" href="">Вперёд</a>
                 </div>
             </div>
           </div>

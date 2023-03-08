@@ -8,8 +8,8 @@
   <body>
     <header class="page-header">
       <div class="container-header">
-        <a class="logo-link">
-          <img class="logo-header" src="images/icons/logo.svg" width="145" height="36" alt="Логотип Интренет-магазина Девайс.">
+        <a class="logo-link logo-link-header">
+          <img src="images/icons/logo.svg" width="145" height="36" alt="Логотип Интренет-магазина Девайс.">
         </a>
         <nav class="navigation">
           <div class="navigation-user">
@@ -18,9 +18,12 @@
               <input class="input-search" id="input-search-id" type="search" placeholder="Поиск по сайту">
               <button class="button-search" type="submit">Найти</button>
             </form>
-            <a class="navigation-user-enter navigation-user-button" href="#">
+            <!--<a class="navigation-user-enter navigation-user-button" href="#">
               <span class="navigation-user-login">Войти</span>
-            </a>
+            </a>-->
+            <div class="navigation-user-enter">
+              <a class="navigation-user-button navigation-user-logout">Войти</a>
+            </div>
             <ul class="navigation-user-list">
               <li class="navigation-user-item">
                 <a class="navigation-user-button navigation-user-button-compare" href="#">Сравнить</a>
@@ -86,7 +89,7 @@
               <div class="slider-text">
                 <p class="slider-tittle">Порхает как бабочка, жалит как пчела!</p>
                 <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="button button-more button-yellow" href="#">Подробнее</a>
+                <button  class="button button-more button-yellow" href="#">Подробнее</button >
                 <table class="slider-characteristics">
                   <caption class="visually-hidden">Характеристики товара.</caption>
                   <tr class="slider-characteristics-value">
@@ -111,7 +114,7 @@
               <div class="slider-text">
                 <p class="slider-tittle">Худеем правильно!</p>
                 <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="button button-more" href="#">Подробнее</a>
+                <button class="button button-more" href="#">Подробнее</button >
                 <table class="slider-characteristics">
                   <caption class="visually-hidden">Характеристики товара.</caption>
                   <tr class="slider-characteristics-value">
@@ -133,7 +136,7 @@
               <div class="slider-text">
                 <p class="slider-tittle">Делай селфи, как Бен Стиллер! </p>
                 <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг. </p>
-                <a class="button button-more" href="#">Подробнее</a>
+                <button  class="button button-more" href="#">Подробнее</button>
                 <table class="slider-characteristics">
                   <caption class="visually-hidden">Характеристики товара.</caption>
                   <tr class="slider-characteristics-value">
@@ -216,19 +219,19 @@
         <div class="page-container info-customer-container">
           <ul class="info-customer-choice">
             <li class="info-customer-choice-item">
-              <a class="button info-customer-button choice-item-current">
+              <button  class="button info-customer-button choice-item-current">
                 <span class="choice-text">Доставка</span>
-              </a>
+              </button >
             </li>
             <li class="info-customer-choice-item">
-              <a class="button info-customer-button">
+              <button  class="button info-customer-button">
                 <span class="choice-text">Гарантия</span>
-              </a>
+              </button >
             </li>
             <li class="info-customer-choice-item">
-              <a class="button info-customer-button">
+              <button  class="button info-customer-button">
                 <span class="choice-text">Кредит</span>
-              </a>
+              </button >
             </li>
           </ul>
           <div class="info-customer-description description-delivery">
@@ -256,7 +259,7 @@
               <li class="about-company-item">СДИК</li>
               <li class="about-company-item">ТоксБерри</li>
             </ul>
-            <a class="button button-about-us" href="#">Подробнее о нас</a>
+            <button  class="button button-about-us" href="#">Подробнее о нас</button >
           </section>
           <section class="contacts">
             <h2 class="title contacts-title">Контакты</h2>
@@ -271,7 +274,7 @@
               <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="button button-write" href="#">Напишите нам</a>
+            <button class="button button-write" href="#">Напишите нам</button>
           </section>
         </div>
       </div>
