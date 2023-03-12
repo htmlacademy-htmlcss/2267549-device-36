@@ -694,7 +694,7 @@ body{
   background-position: bottom;
 }
 
-.category-link-camera:{
+.category-link-camera::before{
   background-image: url("../images/icons/camera.svg");
 }
 
@@ -802,7 +802,7 @@ body{
 }
 
 .button-more:hover::before,
-.info-customer-button:hover:,
+.info-customer-button:hover::before,
 .button-about-us:hover::before,
 .button-write:hover::before,
 .button-filter-show:hover::before,
